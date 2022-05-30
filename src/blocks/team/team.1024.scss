@@ -1,0 +1,46 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.team-sect {
+  padding-top: 70px;
+  &.has-decor-text {
+    &::before {
+      font-size: 200px;
+      bottom: 278px;
+      left: calc(50vw - 718px);
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__title {
+    float: left;
+    width: 160px;
+  }
+
+  &__list {
+    margin: 12px 0 0 auto;
+    width: 670px;
+  }
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+
+  &__dots {}
+}
+
+.char {
+  margin: 0 0 70px;
+  &__photo {
+    width: 145px;
+    height: 145px;
+  }
+
+  &__name {}
+
+  &__position {}
+}

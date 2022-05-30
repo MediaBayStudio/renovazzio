@@ -1,0 +1,19 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.offer-sect {
+  &__title {}
+
+  &__wrap {}
+
+  &__img {}
+
+  &__list {}
+
+  &__li {
+    &::before {}
+
+    &:nth-last-child(n+2) {}
+  }
+}

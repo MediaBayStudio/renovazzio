@@ -1,0 +1,48 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.form-sect {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &__wrap {
+    padding: 50px 20px;
+    background: $white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+  }
+  &__title {
+    margin: 0 0 15px;
+    font: bold 20px/150% Montserrat;
+    letter-spacing: 0.02em;
+  }
+  &__subtitle {
+    margin: 0 0 45px;
+  }
+}
+
+.form {
+  text-align: left;
+  .field {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+  .field_name {}
+  .field_tel {}
+  .field_email {}
+  .form-bottom {
+    margin: auto;
+    width: 240px;
+  }
+  .btn {
+    margin-top: 20px;
+    flex-shrink: 0;
+    width: 240px;
+    height: 55px;
+  }
+  .check {}
+}

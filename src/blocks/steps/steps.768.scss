@@ -1,0 +1,42 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.steps-sect {
+  padding-top: 60px;
+  padding-bottom: 60px - 45px;
+
+  &__title {
+    margin: 0 0 40px;
+    font-size: 28px;
+  }
+
+  &__steps {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.has-decor-text {
+      &::before {
+        margin: 0 0 45px;
+        position: static;
+        align-self: center;
+        width: calc((100% - 20px) / 2);
+        order: 100;
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+.step {
+  width: calc((100% - 20px) / 2);
+  margin: 0 0 45px;
+
+  &:nth-child(odd) {
+    margin-right: 20px;
+  }
+
+  &__title {}
+
+  &__descr {}
+}

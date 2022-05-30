@@ -1,0 +1,68 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.faq-sect {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  // &.has-decor-text {
+  //   &::before {
+  //     bottom: 187px;
+  //     left: calc(50vw - 597px);
+  //     font-size: 150px;
+  //     transform: rotate(-90deg);
+  //   }
+  // }
+
+  &__title {
+    margin: 0;
+    width: 300px;
+    float: left;
+
+    &.has-decor-text {
+      &::before {
+        bottom: -475px;
+        // left: calc(50vw - 628px);
+        left: -115px;
+        font-size: 150px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__list {
+    margin: 12px 0 0 auto;
+    width: 630px;
+  }
+
+  &__li {
+
+    &:nth-last-child(n+2) {}
+  }
+
+  &__li-title {}
+
+  &__li-title-icon {
+
+    &::before {}
+
+    &::after {}
+  }
+
+  &__li-descr {
+
+    &:first-of-type {}
+
+    &:last-of-type {}
+  }
+}
+
+.faq-sect__li.active {
+  >.faq-sect__li-title {}
+
+  .faq-sect__li-title-icon {
+
+    &::before {}
+  }
+}

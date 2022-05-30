@@ -1,0 +1,26 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.hero-sect {
+  &__text {
+  }
+  &__title {
+  }
+  &__subtitle {
+  }
+  &__btn {
+  }
+  &__features {
+  }
+}
+
+.feat {
+  &:nth-last-child(n+2) {
+  }
+  &__icon {
+  }
+  &__text {
+  }
+}

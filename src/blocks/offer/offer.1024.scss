@@ -1,0 +1,32 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.offer-sect {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  &__title {}
+
+  &__wrap {}
+
+  &__img {
+    width: 390px;
+    height: 420px;
+  }
+
+  &__list {
+    padding-left: 64px;
+    width: 550px;
+    font-size: 18px;
+  }
+
+  &__li {
+    &::before {
+      top: 12px;
+      width: 47px;
+      left: -63px;
+    }
+
+    &:nth-last-child(n+2) {}
+  }
+}

@@ -1,0 +1,76 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.form-sect {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &__wrap {
+    padding: 80px 60px 80px 160px;
+
+    &.has-decor-text {
+      &::before {
+        width: 390px;
+        left: -135px;
+        top: 145px;
+        font-size: 140px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__title {
+    font-size: 42px;
+  }
+
+  &__subtitle {
+    margin: 0 0 40px;
+    font-size: 18px;
+  }
+}
+
+.form {
+  .field {
+    margin: 0 0 30px;
+    width: 225px;
+  }
+
+  .field_name {}
+
+  .field_tel {}
+
+  .field_email {}
+
+  .form-bottom {}
+
+  .btn {
+    width: 225px;
+  }
+
+  .check {
+    max-width: none;
+  }
+
+  .check__pseudo-inp {
+    margin-top: 2px;
+  }
+}
+
+.thanks {
+  &__cnt {
+    padding: 150px 20px 140px;
+    width: 625px;
+    max-width: none;
+  }
+  &__close {
+    margin: -140px -10px 120px auto;
+  }
+  &__title {
+    font-size: 42px;
+  }
+  &__descr {
+    font-size: 18px;
+  }
+}

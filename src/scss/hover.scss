@@ -1,0 +1,31 @@
+
+@import 'assets/colors';
+@import 'assets/mixins';
+@import 'assets/variables';
+
+.ftr__nav-li > .nav-link:hover,
+.hdr__nav-li > .nav-link:hover {
+  border-bottom-color: currentColor;
+}
+
+.thanks-popup__close:hover,
+.case-popup__close:hover,
+.faq-sect__li:not(.active) > .faq-sect__li-title:hover,
+.ftr__policy:hover,
+.ftr__dev-link:hover,
+.email:hover,
+.check__link:hover,
+.tel:hover,
+.arrow:hover {
+  color: $green;
+  border-bottom-color: transparent;
+}
+
+.case:hover > .case__text {
+  opacity: 1;
+}
+
+.btn_blue:hover {
+  background: transparent;
+  color: $green;
+}

@@ -1,0 +1,55 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.cases-sect {
+  &__title {}
+
+  &__cases {}
+
+  &__more-btn {
+    &[hidden] {}
+  }
+}
+
+.case {
+  &:nth-last-child(n+2) {}
+
+  &__images {}
+
+  &__link {
+    &:first-child {}
+  }
+
+  &__img {
+    min-height: 307px;
+  }
+
+  &__text {}
+
+  &__title {
+    &-sup {}
+  }
+
+  &__arrow {}
+
+  &__arrow-img {}
+}
+
+.case-popup {
+  &__cnt {
+    max-width: 536px;
+  }
+
+  &__images-nav {
+    &-img {
+      margin-right: 15px;
+      width: 87.2px;
+      height: 50px;
+
+      &:nth-child(6n) {
+        margin-left: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-sect {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  &__wrap {
+    margin: 0;
+    flex-shrink: 0;
+    width: 715px;
+    height: 500px;
+  }
+
+  &__form-wrap {
+    padding: 0 25px 0 0;
+    width: 55%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &__form-title {}
+
+  &__form-descr {}
+
+  &__contacts-wrap {
+    width: 45%;
+  }
+
+  &__title {}
+
+  &__subtitle {}
+}
+
+.contacts {
+  &__address {}
+
+  &__tel {}
+
+  &__email {}
+
+  &-form {
+    .field {
+      width: 310px;
+    }
+    .btn {
+      width: 310px;
+    }
+  }
+}
+
+.address {}
+
+.tel {}
+
+.email {}
+
+#contacts-map {
+  height: 500px;
+  position: static;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  // top: 70px;
+  // height: calc(100% - 70px);
+}

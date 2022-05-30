@@ -1,0 +1,50 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.services-sect {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__title {
+    margin: 0 0 40px;
+    font-size: 28px;
+  }
+
+  &__services {
+  }
+}
+
+.service {
+  display: block;
+  &:nth-last-child(n+2) {
+    margin: 0 0 75px;
+  }
+
+  &__img {
+    float: left;
+    width: 225px;
+    min-height: 160px;
+    height: 160px;
+  }
+
+  &__title {
+    margin: 0 0 15px auto;
+    display: block;
+    max-width: 470px;
+  }
+
+  &__list {
+    margin: 0 0 0 auto;
+    max-width: 470px;
+  }
+
+  &__li {
+    &:nth-last-child(n+2) {}
+  }
+
+  &__price {
+    margin: 20px 0 0 auto;
+    max-width: 470px;
+    display: block;
+  }
+}

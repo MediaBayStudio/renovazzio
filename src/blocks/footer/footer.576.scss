@@ -1,0 +1,30 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.ftr {
+
+  &__top {}
+
+  &__copy {}
+
+  &__logo {}
+
+  &__nav {}
+
+  &__nav-list {}
+
+  &__nav-li {
+
+    &:nth-last-child(n+2) {
+
+      &::after {}
+    }
+  }
+
+  &__policy {}
+
+  &__dev {
+    &-link {}
+  }
+}

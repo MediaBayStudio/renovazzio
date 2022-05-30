@@ -1,0 +1,46 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.callback-popup {
+  &__cnt {
+    padding: 40px 20px 60px;
+    max-width: 450px;
+    .form {
+      margin: 0 auto;
+      max-width: 350px;
+      flex-flow: column;
+      align-items: center;
+      .form-bottom {
+        flex-flow: column;
+      }
+      .check {
+        max-width: 265px;
+      }
+      .btn {
+        margin: 20px 0 0 0;
+        width: 350px;
+      }
+      .field {
+        width: 350px
+      }
+    }
+  }
+  &__title {
+    margin: 0 0 35px;
+    font-size: 32px;
+  }
+  &__subtitle {
+  }
+  &__close {
+
+    &-svg {
+    }
+
+    &-path {
+    }
+  }
+}
+.popup {
+}

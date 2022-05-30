@@ -1,0 +1,47 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-sect {
+  &__wrap {
+    padding: 40px 45px;
+    width: 750px;
+  }
+
+  &__form-wrap {
+    padding: 0 45px 0 0;
+  }
+
+  &__form-title {}
+
+  &__form-descr {}
+
+  &__contacts-wrap {}
+
+  &__title {}
+
+  &__subtitle {}
+}
+
+.contacts {
+  &__address {}
+
+  &__tel {}
+
+  &__email {}
+
+  &-form {
+    .field {
+      width: 310px;
+    }
+    .btn {
+      width: 310px;
+    }
+  }
+}
+
+.address {}
+
+.tel {}
+
+.email {}

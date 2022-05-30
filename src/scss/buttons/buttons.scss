@@ -1,0 +1,25 @@
+
+@import '../assets/colors';
+@import '../assets/mixins';
+@import '../assets/variables';
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 14px/100% Montserrat;
+  border-radius: 5px;
+  transition: background .5s, color .5s, border-color .5s;
+}
+
+.btn_blue {
+  background: $green;
+  border: 1px solid $green;
+  color: $white;
+}
+
+.btn_ol {
+  background: transparent;
+  color: $green;
+  font-weight: normal;
+}

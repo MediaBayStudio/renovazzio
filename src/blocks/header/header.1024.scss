@@ -1,0 +1,40 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.hdr {
+  &__top {
+  }
+  &__logo {
+    &-img {
+    }
+  }
+  &__tel {
+    &::before {
+    }
+  }
+  &__tel,
+  &__callback,
+  &__bottom {
+  }
+  &__callback {
+  }
+  &__burger {
+  }
+  &__bottom {
+  }
+  &__nav {}
+  &__nav-list {}
+  &__nav-li {
+    // &:nth-last-child(n+2) {
+    //   margin: 0 56px 0 0;
+    // }
+    > .nav-link {
+    }
+    // &:nth-last-child(n+2) {
+    //   &::after {
+    //     margin: 0 0 0 56px;
+    //   }
+    // }
+  }
+}

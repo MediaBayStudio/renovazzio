@@ -1,0 +1,100 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.ftr {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font: 14px/150% Montserrat;
+  text-align: center;
+
+  &__top {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &__copy {
+    margin: 30px 0;
+    max-width: 220px;
+  }
+
+  &__logo {
+    width: 240px;
+  }
+
+  &__nav {
+    margin: 15px 0 0;
+    padding-top: 30px;
+    width: 240px;
+    border-top: 1px solid;
+    line-height: 100%;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &__nav-li {
+    display: flex;
+    flex-flow: column;
+    transition: color .5s;
+
+    >.nav-link {
+      border-bottom: 1px solid transparent;
+      transition: border-bottom-color .5s;
+    }
+
+    // &:nth-last-child(n+2) {
+    //   margin: 0 0 10px;
+
+    //   &::after {
+    //     margin: 10px auto 0;
+    //     content: '';
+    //     width: 3px;
+    //     height: 3px;
+    //     background: $grey;
+    //     transform: rotate(45deg);
+    //   }
+    // }
+  }
+
+  &__nav-li,
+  &__nav-dot {
+    &:nth-last-child(n+2) {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__nav-dot {
+    width: 3px;
+    height: 3px;
+    background: $grey;
+    transform: rotate(45deg);
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  &__policy {
+    margin: 0 0 10px;
+    display: inline-block;
+    border-bottom: 1px solid;
+    transition: border-bottom-color .5s;
+  }
+
+  &__dev {
+    &-link {
+      font: 600 14px SegoeUI;
+      letter-spacing: .08em;
+      transition: color .5s;
+      vertical-align: text-bottom;
+    }
+  }
+}

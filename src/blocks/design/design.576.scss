@@ -1,0 +1,32 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.design-sect {
+  &.has-decor-text {
+    &::before {}
+  }
+
+  &__title {}
+
+  &__items {}
+
+  &__rows {}
+}
+
+.design-sect__item {
+  &:nth-last-child(n+2) {}
+  &-icon {}
+
+  &-descr {}
+}
+
+.design-sect__row {
+  &:nth-last-child(n+2) {}
+  &-left {}
+
+  &-center {}
+
+  &-right {}
+}

@@ -1,0 +1,34 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.form-sect {
+  &__wrap {
+    padding: 60px 50px 85px 150px;
+    &::before {
+      left: -130px;
+      top: 140px;
+    }
+  }
+  &__title {
+    margin: 0 0 10px;
+  }
+  &__subtitle {
+    margin: 0 0 45px;
+  }
+}
+
+.form {
+  .field {
+    width: 300px;
+  }
+  .field_name {}
+  .field_tel {}
+  .field_email {}
+  .form-bottom {}
+  .btn {
+    width: 300px;
+  }
+  .check {}
+}

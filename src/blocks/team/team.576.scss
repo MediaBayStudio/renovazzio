@@ -1,0 +1,36 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.team-sect {
+  padding-bottom: 0;
+  &.has-decor-text {
+    &::before {}
+  }
+
+  &__title {}
+
+  &__list {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+
+  &__dots {}
+}
+
+.char {
+  width: 50%;
+  margin: 0 0 50px;
+  &__photo {}
+
+  &__name {}
+
+  &__position {}
+}

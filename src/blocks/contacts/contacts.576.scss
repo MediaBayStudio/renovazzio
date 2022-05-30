@@ -1,0 +1,41 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.contacts-sect {
+  &__wrap {
+    margin: 0;
+    width: 100%;
+  }
+
+  &__form-wrap {}
+
+  &__form-title {}
+
+  &__form-descr {}
+
+  &__contacts-wrap {}
+
+  &__title {}
+
+  &__subtitle {}
+}
+
+.contacts {
+  &__address {}
+
+  &__tel {}
+
+  &__email {}
+}
+
+.address {}
+
+.tel {}
+
+.email {}
+
+#contacts-map {
+  margin: 0;
+  width: 100%;
+}

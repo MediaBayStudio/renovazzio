@@ -1,0 +1,50 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.services-sect {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  &__title {
+    margin: 0 0 45px;
+  }
+
+  &__services {
+    display: flex;
+  }
+}
+
+.service {
+  margin: 0;
+  width: calc((100% - 40px) / 3);
+  display: flex;
+  // &:last-child {
+  //   .service__title-text {
+  //     width: 170px;
+  //   }
+  // }
+  &:nth-last-child(n+2) {
+    margin: 0 30px 0 0;
+  }
+
+  &__img {
+    width: 100%;
+    min-height: 215px;
+    height: 215px;
+  }
+
+  &__title {
+    margin-left: 0;
+  }
+
+  &__list {}
+
+  &__li {
+    &:nth-last-child(n+2) {}
+  }
+
+  &__price {
+    margin-top: auto;
+    padding-top: 20px;
+  }
+}

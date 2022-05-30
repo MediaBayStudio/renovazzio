@@ -1,0 +1,53 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.faq-sect {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__title {
+    margin: 0 0 40px;
+    font-size: 28px;
+  }
+
+  &__list {}
+
+  &__li {
+    padding: 0 0 0 45px;
+    &:nth-last-child(n+2) {
+      // padding: 0 0 35px;
+      margin: 0 0 35px;
+    }
+  }
+
+  &__li-title {
+    padding: 0 0 35px;
+  }
+
+  &__li-title-icon {
+    left: -30px;
+    &::before {}
+
+    &::after {}
+  }
+
+  &__li-descr {
+    margin-top: -10px;
+    opacity: 0;
+    transition: opacity .25s;
+  }
+}
+
+.faq-sect__li.active {
+  >.faq-sect__li-title {
+    // padding: 0 0 20px;
+  }
+  >.faq-sect__li-descr {
+    opacity: 1;
+  }
+
+  .faq-sect__li-title-icon {
+
+    &::before {}
+  }
+}

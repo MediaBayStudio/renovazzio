@@ -1,0 +1,45 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.hero-sect {
+  padding-bottom: 60px;
+  &__text {
+    padding-top: 125px;
+    padding-bottom: 280px;
+  }
+  &__title {
+    margin: 0 0 15px;
+    font-size: 36px;
+  }
+  &__subtitle {
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+  &__btn {
+    width: 205px;
+  }
+  &__features {
+    margin-top: -50px;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+
+.feat {
+  width: calc((100% - 60px) / 4);
+  height: 100px;
+  &:nth-child(n) {
+    margin: 0;
+  }
+  &:nth-last-child(n+2) {
+  }
+  &__icon {
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+  }
+  &__text {
+  }
+}

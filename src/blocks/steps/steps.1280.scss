@@ -1,0 +1,31 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.steps-sect {
+  padding-bottom: 70px - 70px;
+  &__title {}
+
+  &__steps {
+    &.has-decor-text {
+      &::before {
+        width: calc((100% - 100px) / 3);
+        font-size: 80px;
+      }
+    }
+  }
+}
+
+.step {
+  margin: 0 0 70px;
+  width: calc((100% - 100px) / 3);
+  &:nth-child(n) {
+    margin-right: 49px;
+  }
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  &__title {}
+
+  &__descr {}
+}

@@ -1,0 +1,58 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+#wpadminbar {
+  display: none !important;
+}
+
+html[lang], body {
+  margin-top: 0 !important;
+}
+
+.hdr {
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: translateToBottom .5s;
+    z-index: 1;
+  }
+  &__top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  &__logo {
+    width: 120px;
+    object-fit: contain;
+  }
+  &__tel {
+    margin: 0 10px 0 auto;
+    font-size: 0;
+    &::before {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &__burger {
+  }
+  &__callback,
+  &__bottom {
+    display: none;
+  }
+  &__callback {
+    // display: none;
+  }
+  &__burger {
+    margin: -1px 0 0 0;
+  }
+  &__bottom {
+    // display: none;
+  }
+}

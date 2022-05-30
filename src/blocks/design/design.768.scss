@@ -1,0 +1,56 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.design-sect {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &.has-decor-text {
+    &::before {
+      font-size: 120px;
+      width: 275px;
+      bottom: 45px;
+      left: calc(50vw - 370px);
+      word-break: break-all;
+    }
+  }
+
+  &__title {
+    margin-top: -13px;
+    float: left;
+    max-width: 245px;
+    font-size: 28px;
+  }
+
+  &__items {
+    margin-left: auto;
+    max-width: 405px;
+  }
+
+  &__rows {
+    margin: 35px 0 0 auto;
+    max-width: 405px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.design-sect__item {
+  &:nth-last-child(n+2) {}
+  &-icon {}
+
+  &-descr {}
+}
+
+.design-sect__row {
+  &:nth-last-child(n+2) {}
+  &-left {}
+
+  &-center {
+  }
+
+  &-right {
+    display: inline-block;
+  }
+}

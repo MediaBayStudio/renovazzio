@@ -1,0 +1,40 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.team-sect {
+  &.has-decor-text {
+    &::before {
+      left: calc(50vw - 818px);
+    }
+  }
+
+  &__title {
+    width: 300px;
+  }
+
+  &__list {
+    width: 730px;
+  }
+
+  &__prev,
+  &__next {}
+
+  &__prev {}
+
+  &__next {}
+
+  &__dots {}
+}
+
+.char {
+  font-size: 16px;
+  &__photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__name {}
+
+  &__position {}
+}

@@ -1,0 +1,37 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.services-sect {
+  &__title {}
+
+  &__services {}
+}
+
+.service {
+  &:nth-last-child(n+2) {}
+   // &:last-child {
+   //  .service__title-text {
+   //    width: auto;
+   //  }
+  // }
+
+  &__img {
+    min-height: 260px;
+    height: 260px;
+  }
+
+  &__title {
+    .br {
+      display: none;
+    }
+  }
+
+  &__list {}
+
+  &__li {
+    &:nth-last-child(n+2) {}
+  }
+
+  &__price {}
+}

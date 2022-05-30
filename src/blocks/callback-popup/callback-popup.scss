@@ -1,0 +1,47 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+
+.callback-popup {
+  // opacity: 1;
+  // visibility: visible;
+  &__cnt {
+    padding: 40px 20px;
+    max-width: 350px;
+    border-radius: 5px;
+  }
+  &__title {
+    margin: 0 0 20px;
+    text-align: center;
+    color: $green;
+    font: bolder 22px/100% Montserrat;
+  }
+  &__subtitle {
+  }
+  &__close {
+    margin: -30px -10px 20px auto;
+    padding: 2.5px;
+    display: flex;
+    color: $green;
+    transform: scale(.8);
+    transition: color .5s;
+
+    &-svg {
+      width: 19px;
+      height: 19px;
+      fill: none;
+      overflow: visible;
+      pointer-events: none;
+    }
+
+    &-path {
+      stroke: currentColor;
+      stroke-linejoin: round;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+  }
+}
+.popup {
+}

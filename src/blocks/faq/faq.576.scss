@@ -1,0 +1,40 @@
+@import '../../scss/assets/colors';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/variables';
+
+.faq-sect {
+
+  &__title {}
+
+  &__list {}
+
+  &__li {
+
+    &:nth-last-child(n+2) {}
+  }
+
+  &__li-title {}
+
+  &__li-title-icon {
+
+    &::before {}
+
+    &::after {}
+  }
+
+  &__li-descr {
+
+    &:first-of-type {}
+
+    &:last-of-type {}
+  }
+}
+
+.faq-sect__li.active {
+  >.faq-sect__li-title {}
+
+  .faq-sect__li-title-icon {
+
+    &::before {}
+  }
+}

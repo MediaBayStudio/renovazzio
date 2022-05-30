@@ -1,0 +1,129 @@
+@import '../assets/colors';
+@import '../assets/mixins';
+@import '../assets/variables';
+
+label.invalid {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  font: normal 10px/150% Montserrat;
+  color: $red;
+  pointer-events: none;
+}
+
+$checkbox_size: 12px;
+$checkbox_margin_right: 10px;
+$checkbox_text_width: calc(100% - #{$checkbox_size + $checkbox_margin_right});
+$checkbox_border_radius: 0;
+
+.check {
+  max-width: 260px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  cursor: pointer;
+  font: 14px/143% Montserrat;
+
+  >label.invalid {
+    position: static;
+    margin: 4px 0 -4px $checkbox_size + $checkbox_margin_right;
+    max-width: $checkbox_text_width;
+    order: 10;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__pseudo-inp {
+    margin: 5px $checkbox_margin_right 0 0;
+    display: inline-flex;
+    width: $checkbox_size;
+    height: $checkbox_size;
+    color: $black;
+    border-radius: $checkbox_border_radius;
+    border: 1px solid;
+    font-size: 0;
+    // position: relative;
+    overflow: hidden;
+    transition: background .5s, box-shadow .5s;
+    box-shadow: none;
+
+    // &::after {
+    //   content: '';
+    //   margin: auto;
+    //   display: inline-block;
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   background: center/cover no-repeat;
+    //   opacity: 0;
+    //   transition: opacity .5s;
+    //   border-radius: $checkbox_border_radius;
+    //   pointer-events: none;
+    // }
+  }
+
+  &__text {
+    display: inline-block;
+    width: $checkbox_text_width;
+    font-size: 12px;
+    line-height: 150%;
+    color: #4d4d4d;
+  }
+
+  &__inp {
+    position: absolute;
+    opacity: 0;
+
+    &:checked~.check__pseudo-inp {
+      background: $green;
+      box-shadow: inset 0 0 0 1.6px $white;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__link {
+    transition: border-bottom-color .5s, color .5s;
+    border-bottom: 1px solid;
+  }
+}
+
+.field {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  position: relative;
+  font: 300 16px/100% Montserrat;
+}
+
+.field__inp {
+  width: 100%;
+  height: 55px;
+  border: none;
+  background: none;
+  padding: 12px 20px;
+  font: inherit;
+  color: $green;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #F9F8F8;
+  transition: border-color .5s;
+  &.invalid {
+    border-color: $red;
+  }
+  &::placeholder {
+    font: inherit;
+    color: $black;
+    transition: color .5s;
+  }
+}
+
+.form {
+  position: relative;
+}

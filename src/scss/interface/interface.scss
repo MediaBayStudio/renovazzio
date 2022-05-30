@@ -1,0 +1,264 @@
+@import '../assets/colors';
+@import '../assets/mixins';
+@import '../assets/variables';
+
+
+// a[href="#"] {
+// opacity: .5;
+// pointer-events: none;
+// }
+
+html {
+}
+
+body {
+  color: $black;
+  font: 16px/150% Montserrat, sans-serif;
+
+  &.no-scroll {
+    overflow: hidden;
+    .hdr.fixed {
+      overflow-y: scroll;
+    }
+  }
+}
+
+.page-wrapper {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Для некоторых телефонов
+.container {
+  // position: relative;
+  // overflow-x: hidden;
+  // overflow-y: visible;
+}
+
+/* loader */
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+
+  // Видимость регулируется классами .hidden и .visible
+  &__circle {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    animation: spin .5s linear infinite;
+    border-top-color: $green;
+    border-left-color: $green;
+  }
+}
+
+.loader-white {
+  background: #fff
+}
+
+.loading>.loader {
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading {
+  .btn {
+    box-shadow: none !important;
+  }
+}
+
+/* loader */
+
+
+.thanks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  max-height: calc(var(--vh, 1vh) * 100);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparentize(#000, .4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+  overflow: auto;
+  z-index: 5;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__cnt {
+    max-width: 310px;
+    padding: 25px 20px 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: $white;
+    color: $black;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  &__close {
+    margin: -15px -10px 20px auto;
+    padding: 2.5px;
+    display: flex;
+    color: $green;
+    transform: scale(.8);
+    transition: color .5s;
+
+    &-svg {
+      width: 19px;
+      height: 19px;
+      fill: none;
+      overflow: visible;
+      pointer-events: none;
+    }
+
+    &-path {
+      stroke: currentColor;
+      stroke-linejoin: round;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    // font: bolder 22px/100% Ubuntu;
+    font: bolder 22px/100% Montserrat;
+    // text-transform: uppercase;
+    text-align: center;
+    color: $green;
+
+  }
+
+  &__subtitle {
+    // font: 500 14px/160% Ubuntu;
+    // text-transform: uppercase;
+    // text-align: center;
+    // color: $blue;
+  }
+
+  &__descr {
+    font: 14px/150% Montserrat;
+    text-align: center;
+  }
+}
+
+
+.cf7-form-field {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+#fake-scrollbar {
+  display: none;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 9999;
+
+  &.active {
+    display: block;
+  }
+}
+
+// Чтобы на всех устройствах смотрелось корректно
+// display:flex не подходит
+// только такой вот костыль с псевдоэлементами и фоном
+.has-right-line {
+  padding: 0 30px 0 0;
+  width: calc(100% - 5px);
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(0.5em * 150 / 100);
+    left: 0;
+    transform: translateY(-50%);
+    width: calc(100% + 5px);
+    height: 1px;
+    background: $grey;
+    opacity: 0.7;
+    z-index: -2;
+  }
+
+  .text {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% + 20px);
+      height: 100%;
+      background: $white;
+      z-index: -1;
+    }
+  }
+}
+
+.has-decor-text {
+  position: relative;
+
+  &::before {
+    content: attr(data-decor-text);
+    position: absolute;
+    font: bold 0/100% Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: $white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #BEDDDC;
+  }
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+  font: 500 16px/100% Montserrat, sans-serif;
+  transition: color .5s;
+
+  &::before {
+    content: '';
+    margin: 0 5px 0 0;
+    width: 10px;
+    height: 10px;
+    background: url(img/icon-tel.svg) center/contain no-repeat;
+  }
+}
+
+div.wpcf7-response-output,
+span.wpcf7-not-valid-tip,
+.screen-reader-response {
+  display: none !important;
+}
